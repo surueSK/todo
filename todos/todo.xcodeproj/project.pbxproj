@@ -15,7 +15,6 @@
 		DA428D8722C510BF00DD9767 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA428D8522C510BF00DD9767 /* LaunchScreen.storyboard */; };
 		DA428D9222C510BF00DD9767 /* todoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA428D9122C510BF00DD9767 /* todoTests.swift */; };
 		DA428D9D22C510BF00DD9767 /* todoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA428D9C22C510BF00DD9767 /* todoUITests.swift */; };
-		DA428DAD22C5188A00DD9767 /* AddController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA428DAC22C5188A00DD9767 /* AddController.swift */; };
 		DAE3838A22D7229200542B88 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE3838822D7229200542B88 /* TableViewCell.swift */; };
 		DAE3838B22D7229200542B88 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DAE3838922D7229200542B88 /* TableViewCell.xib */; };
 /* End PBXBuildFile section */
@@ -38,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DA3BEF6322DD9FF70016C1DB /* todo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = todo.entitlements; sourceTree = "<group>"; };
 		DA428D7622C510BD00DD9767 /* todo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = todo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA428D7922C510BD00DD9767 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DA428D7B22C510BD00DD9767 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -52,7 +52,6 @@
 		DA428D9822C510BF00DD9767 /* todoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = todoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA428D9C22C510BF00DD9767 /* todoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = todoUITests.swift; sourceTree = "<group>"; };
 		DA428D9E22C510BF00DD9767 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DA428DAC22C5188A00DD9767 /* AddController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddController.swift; sourceTree = "<group>"; };
 		DAE3838822D7229200542B88 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		DAE3838922D7229200542B88 /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -105,9 +104,9 @@
 		DA428D7822C510BD00DD9767 /* todo */ = {
 			isa = PBXGroup;
 			children = (
+				DA3BEF6322DD9FF70016C1DB /* todo.entitlements */,
 				DAE3838822D7229200542B88 /* TableViewCell.swift */,
 				DAE3838922D7229200542B88 /* TableViewCell.xib */,
-				DA428DAC22C5188A00DD9767 /* AddController.swift */,
 				DA428D7922C510BD00DD9767 /* AppDelegate.swift */,
 				DA428D7B22C510BD00DD9767 /* ViewController.swift */,
 				DA428D7D22C510BD00DD9767 /* Main.storyboard */,
@@ -205,6 +204,14 @@
 				TargetAttributes = {
 					DA428D7522C510BD00DD9767 = {
 						CreatedOnToolsVersion = 10.2.1;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 0;
+							};
+							com.apple.BackgroundModes = {
+								enabled = 0;
+							};
+						};
 					};
 					DA428D8C22C510BF00DD9767 = {
 						CreatedOnToolsVersion = 10.2.1;
@@ -273,7 +280,6 @@
 				DA428D7C22C510BD00DD9767 /* ViewController.swift in Sources */,
 				DA428D7A22C510BD00DD9767 /* AppDelegate.swift in Sources */,
 				DA428D8222C510BD00DD9767 /* todo.xcdatamodeld in Sources */,
-				DA428DAD22C5188A00DD9767 /* AddController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
