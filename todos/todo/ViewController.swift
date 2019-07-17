@@ -26,7 +26,8 @@ class ViewController: UIViewController,AVAudioRecorderDelegate, AVAudioPlayerDel
     
     weak var timer: Timer!
     var startTime = Date()
-   
+   var test = "test"
+    
     @IBOutlet var tableView : UITableView!
     
     //----------------ここからToDoテーブル関連-----------------
