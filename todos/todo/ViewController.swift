@@ -246,24 +246,25 @@ class ViewController: UIViewController,AVAudioRecorderDelegate, AVAudioPlayerDel
             
         }
     }
-    
+
     func getURL() -> URL{
         let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
         let docsDirect = paths[0]
         let url = docsDirect.appendingPathComponent("recording.m4a")
         return url
     }
+
     
     @IBAction func play(){
         if !isPlaying {
             
             timerMinute.text = "00"
             timerSecond.text = "00"
-            
+            /*
             audioPlayer = try! AVAudioPlayer(contentsOf: getURL())
             audioPlayer.delegate = self
             audioPlayer.play()
-            
+            */
             isPlaying = true
             
             label.text = "再生中"
@@ -272,7 +273,7 @@ class ViewController: UIViewController,AVAudioRecorderDelegate, AVAudioPlayerDel
             
         }else{
             
-            audioPlayer.stop()
+            //audioPlayer.stop()
             isPlaying = false
             
             label.text = "待機中"
@@ -315,5 +316,4 @@ class ViewController: UIViewController,AVAudioRecorderDelegate, AVAudioPlayerDel
     //}
     
 }
-
 

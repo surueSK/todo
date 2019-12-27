@@ -1,8 +1,8 @@
 //
 //  ContentView.swift
-//  watchtest WatchKit Extension
+//  orf WatchKit Extension
 //
-//  Created by 助川友理 on 2019/10/02.
+//  Created by 助川友理 on 2019/11/12.
 //  Copyright © 2019 助川友理. All rights reserved.
 //
 
